@@ -1,5 +1,9 @@
 package com.example.Humanely_project.model.Entities;
+import org.apache.catalina.User;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table
@@ -12,6 +16,9 @@ public class Users {
     private String username;
     private String Email;
     private int password;
+
+    @ManyToMany(mappedBy = "usersMul")
+    private List<Services> servicesMul = new ArrayList<>();
 
     public Users(int id, String username, String email, int password) {
         this.id = id;

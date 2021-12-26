@@ -1,6 +1,6 @@
 import React from "react";
 import {Outlet, Link } from "react-router-dom";
-import expenses from "./combonents/User"
+
 export default function App() {
   return (
     <div>
@@ -11,8 +11,13 @@ export default function App() {
           paddingBottom: "1rem"
         }}
       >
-        <Link to="/invoices">Invoices</Link> |{" "}
-        <Link to="/User">Regestor</Link>
+ 
+        <Link to="/User">Register</Link>  |{" "}
+        <Link to="/Services">Services</Link>  |{" "}
+        <Link to="/Home">Home</Link>  |{" "}
+        <Link to="/Login">Login</Link>|{" "}
+        <Link to="/Regestor">Regoster</Link>
+        {/* <Link to="/Food">Food</Link>   */}
       </nav>
       <Outlet/>
     </div>

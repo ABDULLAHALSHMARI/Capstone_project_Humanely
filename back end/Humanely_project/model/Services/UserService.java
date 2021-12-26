@@ -1,7 +1,6 @@
 package com.example.Humanely_project.model.Services;
 import com.example.Humanely_project.model.Entities.Users;
 import com.example.Humanely_project.model.Repositories.UserRepository;
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -31,6 +30,5 @@ public class UserService {
     public void deleteUsers(Integer usersId) {
         userRepository.deleteById(usersId);
     }
-
 
 }
