@@ -21,6 +21,9 @@ public class Food {
         this.expired = expired;
     }
 
+    public Food() {
+    }
+
     public int getId() {
         return id;
     }

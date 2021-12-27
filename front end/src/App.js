@@ -16,8 +16,8 @@ export default function App() {
         <Link to="/Services">Services</Link>  |{" "}
         <Link to="/Home">Home</Link>  |{" "}
         <Link to="/Login">Login</Link>|{" "}
-        <Link to="/Regestor">Regoster</Link>
-        {/* <Link to="/Food">Food</Link>   */}
+        <Link to="/Regestor">Regoster</Link>|{" "}
+        <Link to="/Food">Food</Link>  
       </nav>
       <Outlet/>
     </div>

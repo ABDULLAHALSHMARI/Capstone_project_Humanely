@@ -27,11 +27,11 @@ function handlesetusername(event) {
     })
   }
 
-  
+
 return(
 <main style={{}}>
 <form onSubmit={handleSubmit}>
-  <input
+  <input 
     type="text"
     value={username}
     name="username"

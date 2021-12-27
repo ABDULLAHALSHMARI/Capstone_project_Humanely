@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from "axios"
 
 
@@ -13,7 +14,7 @@ export default function ComponentHome() {
     useEffect(() => {
         // debugger;  
         axios
-            .get("/lawyers")
+            .get("/food")
             .then(result => setData(result.data));
         console.log(data);
         // debugger;  
@@ -24,7 +25,7 @@ export default function ComponentHome() {
 
     return (
         <div>
-            <h1> List  Services : </h1>
+            <h1> List  The Foods : </h1>
             <h1>Soon</h1>
             <hr />
             {data.map(food => {

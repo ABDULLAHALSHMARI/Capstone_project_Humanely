@@ -1,9 +1,9 @@
 let invoices = [
     {
-      name: "Santa Monica",
+      name: "Food",
       number: 1995,
-      amount: "$10,800",
-      due: "12/05/1995"
+      location: "sakaka",
+      date: "3 day ago"
     },
     {
       name: "Stankonia",
@@ -40,3 +40,6 @@ let invoices = [
       invoice => invoice.number === number
     );
   }
+
+
+  
