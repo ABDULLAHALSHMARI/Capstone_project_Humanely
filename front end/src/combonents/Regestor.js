@@ -21,12 +21,12 @@ export default class Regestor extends Component {
         return (
             <div>
                 <h2 className='text-center'>Employees List</h2>
-                <div className='row' padding="">
+                <div className='' padding="-500px" margien="50px">
                 <Link to="/add" className=''>
                 {/* <Button variant="primary">Primary</Button>{' '} */}
                     </Link>{""}
                 </div>
-                <div className="row">
+                <div className="">
                     <table className='table table-striped table-bordered'>
                       <thead>
                           <tr>

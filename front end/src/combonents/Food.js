@@ -4,7 +4,25 @@ import axios from "axios"
 
 
 
-export default function ComponentHome() {
+export default function Food() {
+
+    let [name,setname] = useState("")
+    let[ title, settitle] = useState("")
+    let[img, setimg] = useState("")
+    let[expired,setexpired] = useState("")
+    
+    function handlesetname(event) {
+        setname((name = event.target.value));
+      }
+      function handlesettitle(event) {
+        settitle((title = event.target.value));
+      }
+      function handleimg(event) {
+        setimg((img = event.target.value));
+      }
+      function handleexpired(event){
+          setexpired((expired = event.target.value));
+      }
 
     const [data, setData] = useState([{ id: "", name: "",img:"", title:"",expired:"" }]);
 
@@ -13,8 +31,7 @@ export default function ComponentHome() {
 
     useEffect(() => {
         // debugger;  
-        axios
-            .get("/food")
+        axios.get("/api/food")
             .then(result => setData(result.data));
         console.log(data);
         // debugger;  
@@ -27,6 +44,7 @@ export default function ComponentHome() {
         <div>
             <h1> List  The Foods : </h1>
             <h1>Soon</h1>
+            <img src={"../public/image/kabsa.jpg"}  />
             <hr />
             {data.map(food => {
                 return <div key={food.id}>

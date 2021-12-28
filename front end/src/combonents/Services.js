@@ -3,6 +3,7 @@ import { Outlet, NavLink, useSearchParams } from "react-router-dom";
 import axios from "axios"
 import Food from "./Food"
 import Clothes from './Clothes';
+import ElectricDev from "./ElectricDev";
 export default function Services() {
 
     const [myservices, setMyServices] = useState("")
@@ -28,30 +29,32 @@ export default function Services() {
                 >
                     <NavLink
                         style={({ isActive }) => ({ display: "block", margin: "1rem 0", color: isActive ? "#43A6AC" : "" })}
-                        to={`/food`}
-                        key={1}
+                        to={'/Services/food'}
+                        key={"food"}
                     >
                         Food
                     </NavLink>
                     <NavLink
                         style={({ isActive }) => ({ display: "block", margin: "1rem 0", color: isActive ? "#43A6AC" : "" })}
-                        to={"/clothes"}
-                        key={2}
+                        to={"/Services/clothes"}
+                        key={"clothes"}
                     >
                         Clothes
                     </NavLink>
-                    <Outlet />
                     <NavLink
                         style={({ isActive }) => ({ display: "block", margin: "1rem 0", color: isActive ? "#43A6AC" : "" })}
-                        to={`/Food`}
-                        key={3}
+                        to={"/Services/electricDev"}
+                        key={"electricDev"}
                     >
                         Electric Devices
                     </NavLink>
+
+                    {/* Electric Devices */}
                 </nav>
+                <Outlet />
             </div>
 
-            <Outlet />
+            
         </main>
     );
 }

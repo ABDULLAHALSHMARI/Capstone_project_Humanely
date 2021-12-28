@@ -4,7 +4,7 @@ import {Outlet, Link } from "react-router-dom";
 export default function App() {
   return (
     <div>
-      <h1>huminly</h1>
+      <h1>humanly</h1>
       <nav
         style={{
           borderBottom: "solid 1px",
@@ -17,7 +17,7 @@ export default function App() {
         <Link to="/Home">Home</Link>  |{" "}
         <Link to="/Login">Login</Link>|{" "}
         <Link to="/Regestor">Regoster</Link>|{" "}
-        <Link to="/Food">Food</Link>  
+        <Link to="/AddFood">AddFood</Link>|{" "}
       </nav>
       <Outlet/>
     </div>
