@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Outlet, NavLink, useSearchParams } from "react-router-dom";
 import axios from "axios"
 import Food from "./Food"
-import Clothes from './Clothes';
+import Clothes from "./Clothes"
 import ElectricDev from "./ElectricDev";
 export default function Services() {
 

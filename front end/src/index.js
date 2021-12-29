@@ -11,6 +11,7 @@ import Regestor from './combonents/Regestor';
 import Clothes from "./combonents/Clothes";
 import ElectricDev from './combonents/ElectricDev';
 import AddFood from './combonents/AddFood';
+import AddClothes from './combonents/AddClothes';
 
 
 ReactDOM.render(
@@ -27,6 +28,7 @@ ReactDOM.render(
         <Route path="Login" element={<Login />} />
         <Route path="Regestor" element={<Regestor />} />
         <Route path="AddFood" element={<AddFood />} />
+        <Route path="AddClothes" element={<AddClothes />} />
       </Route>
       <Route
         path="*"

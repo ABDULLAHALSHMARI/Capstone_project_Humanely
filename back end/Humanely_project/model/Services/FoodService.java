@@ -1,8 +1,6 @@
 package com.example.Humanely_project.model.Services;
 import com.example.Humanely_project.model.Entities.Food;
-import com.example.Humanely_project.model.Entities.Users;
 import com.example.Humanely_project.model.Repositories.FoodRepository;
-import com.example.Humanely_project.model.Repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
