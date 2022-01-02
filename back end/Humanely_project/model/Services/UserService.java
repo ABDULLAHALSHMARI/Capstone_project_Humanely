@@ -20,9 +20,24 @@ public class UserService {
     public List<Users> getUsers() {
         return userRepository.findAll();
     }
+
     public Optional<Users>getUser(Integer usersId ){
         return userRepository.findById(usersId);
     }
+
+    public String getCheck(String username ,String password) {
+        if( userRepository.existsByUsername(username) ){
+            String pass = userRepository.findPasswordByUsername(username);
+            if (pass.equals(password)){
+                return "authenticated" ;
+            }
+            else {
+                return "Password does not match"; }
+        }
+
+        return "Username not found";
+    }
+
     public void addNewUsers(Users users){
         userRepository.save(users);
     }

@@ -19,6 +19,7 @@ export default function App() {
         <Link to="/Regestor">Regoster</Link>|{" "}
         <Link to="/AddFood">AddFood</Link>|{" "}
         <Link to="/AddClothes">Addclothes</Link>|{" "}
+        <Link to="/AddDevice">AddDevice</Link>|{" "}
       </nav>
       <Outlet/>
     </div>

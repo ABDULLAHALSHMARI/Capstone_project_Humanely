@@ -34,6 +34,11 @@ public class UserController {
         return userService.getUser(usersId);
     }
 
+    @GetMapping(path = "login")
+    public String checkLogin(@RequestParam (name = "username") String username , @RequestParam (name = "password") String password ) {
+        return userService.getCheck(username,password);
+
+    }
         @DeleteMapping(path = "delete/{usersId}")
         public void deleteUsers (@PathVariable("usersId") Integer usersId){
             userService.deleteUsers(usersId);

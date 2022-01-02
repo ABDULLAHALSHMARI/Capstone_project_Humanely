@@ -1,7 +1,7 @@
 package com.example.Humanely_project.model.Services;
 
 
-import com.example.Humanely_project.model.Entities.Clothes;
+
 import com.example.Humanely_project.model.Entities.ElectricDev;
 import com.example.Humanely_project.model.Repositories.ElectricDevRepository;
 import org.springframework.beans.factory.annotation.Autowired;
