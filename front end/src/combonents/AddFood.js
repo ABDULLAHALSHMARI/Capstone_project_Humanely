@@ -55,7 +55,16 @@ export default function AddFood(){
     type="text"
     value={img}
     name="img"
-    onChange={handlesetimg} />
+    onChange={handlesetimg} 
+    />
+    <br/>
+    <input
+    type="text"
+    value={expired}
+    name="location"
+    placeholder=" location"
+    onChange={handleexpired}
+  />
   <br />
   <br />
   <input type="submit"

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 
 export default class ElectricDev extends Component {
   constructor(props) {
@@ -31,6 +31,7 @@ export default class ElectricDev extends Component {
     return (
       <div>
         <h1> List  Of   Devices : </h1>
+        <Link to="/AddDevice"><button>Add Electric Device</button></Link>
           <hr />
           {this.state.Device.map((item => (
                <div key={item.id}>

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 
 export default class Clothes extends Component {
@@ -30,6 +31,7 @@ export default class Clothes extends Component {
     return (
       <div>
         <h1> List  Of   Clothes : </h1>
+        <Link to="/AddClothes"><button>Add Clothes</button></Link>
           <hr />
           {this.state.clothes.map((item => (
                <div key={item.id}>
@@ -37,7 +39,8 @@ export default class Clothes extends Component {
                   <h2>{item.name}</h2>
                   <p>{item.title}</p>
                   <p>{item.size}</p>
-                  <button onClick={(e) => this.deleteContact(item.id, e)}>Click to Delete</button>
+                  <button onClick={(e) => this.deleteContact(item.id, e)}>Get It</button>
+                  
                   <hr />
               </div>
            ))) 
