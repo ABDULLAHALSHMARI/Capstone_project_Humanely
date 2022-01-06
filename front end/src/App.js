@@ -22,7 +22,7 @@ export default function App() {
       }}>humanly</h1> */}
       <nav>
         <div class="header">
-  <a href="#default" class="logo">Humanly</a>
+  <a href="<home/>" class="logo">Humanly</a>
   <div class="header-right">
       
     <Link className="active" to="/User">Register</Link>  
@@ -31,6 +31,10 @@ export default function App() {
 
     <Link to="/Home">Home</Link>  
     <Link to="/Login">Login</Link>
+    <hr/>
+    <br/>
+    
+
     
   </div>
 </div>
@@ -45,6 +49,12 @@ export default function App() {
         <Link to="/AddDevice">AddDevice</Link>|{" "} */}
       </nav>
       <Outlet/>
+      <div className="AppImg">
+      <Link to="/Addclothes"><img src="http://www.lahaonline.com/media/images/articles//ekhterak/2014_1513235969.jpg"/></Link>
+
+      <Link to="/AddFood"><img src="https://www.sayidaty.net/sites/default/files/styles/600x380/public/30/10/2015/1446225292_1.png?itok=dOBp5DS-"/></Link>
+    
+      </div>
     </div>
   );
 }

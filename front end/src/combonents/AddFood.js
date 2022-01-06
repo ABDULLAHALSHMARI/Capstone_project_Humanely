@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react'
 import axios from "axios"
 
 
+
 export default function AddFood(){
     let [name,setname] = useState("")
     let[ title, settitle] = useState("")
     let[img, setimg] = useState("")
     let[expired,setexpired] = useState("")
 
+    
     function handlesetname(event) {
         setname((name = event.target.value));
       }

@@ -49,6 +49,40 @@ body {
   padding: 20px 10px;
 }
 
+/* .AppImg { */
+  /* background-color: rgb(6, 187, 127);
+   width: 200px;
+  height: 200px; 
+  font-size: 25px;
+  padding: 20px;
+  margin: 15px; */
+  /* width: 46px;
+  height: 44px;
+  background: url(https://www.albayan.ae/polopoly_fs/1.4142791.1618522205!/image/image.jpg) 100 0; */
+
+
+.navpar{height: 50px;background-color: #fff;}
+.navpar li{color: #EA4665;display: inline-block;padding: 15px; text-align: center;}
+.navpar .ul{text-align: center;}
+.header{background-color: #2B2D42;height: 400px; background-attachment: fixed; position: relative;}
+.header .img{background-image: url(http://i.imgur.com/XxNmNGL.png);background-attachment:scroll;background-repeat: no-repeat;
+border-radius: 250px;height: 250px;width: 250px;background-size: 100% 100%; position: absolute;left: 50px;top: 50px; padding: 20px;}
+.header .text{height: 350px;width: 60%;position: absolute;right: 10px;top:20px; background-attachment: scroll;}
+.text h1,h2 {padding: 15px; font-family: caveat;color: #fff;}
+.text h1{font-size: 50px;}
+.header input{background-color: #E92640; color: #fff;position: absolute;right: 0px;bottom: 0px;}
+.text p{color: #646B7D;padding: 15px;}
+.body{background-color: #EDF2F5;height: 900px; background-attachment: fixed;}
+.body .left-body{width: 30%;color: rgb(211, 174, 174); }
+.body .right-body{width: 60%;vertical-align: top;}
+.body .left-body , .right-body{display: inline-block;}
+.pic{background-image: url(http://i.imgur.com/DfxFnLL.jpg);background-attachment: fixed;
+background-repeat: no-repeat;height: 450px;background-size: 100% 100%;}
+.footer{background-attachment: fixed;height: 250px;background-color: #2B2D42;}
+.footer li{color: #EA4665;display: inline-block;padding: 15px; text-align: center;}
+.footer .ul{text-align: center;}
+
+
 .header a {
   float: left;
   color: black;
