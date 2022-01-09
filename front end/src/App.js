@@ -4,17 +4,29 @@ import './App.css'
 import { useState } from "react";
 import Login from "./combonents/Login";
 import Home from "./combonents/home";
+import Food from "./combonents/Food";
 
 export default function App() {
 
   let [authenticate, setAuthenticate] = useState(false);
 
+ let usery= sessionStorage.setItem("enter", handleLogin);
+  
   function handleLogin() {
     setAuthenticate(true);
   }
   if (!authenticate) {
     return <div class="login"><Login handleLogin={handleLogin} /> </div>;
   }
+
+//   function (event){
+//     setAuthenticate(true)
+//     if  (!authenticate){
+    
+//         return(<Food/>);
+//     }
+//     else{}
+// }
 
   return (
     <div style={{backgroundimage:"kabsa.jpg"}}>
@@ -35,25 +47,15 @@ export default function App() {
     <br/>
     
 
-    
+   
   </div>
+  
 </div>
- 
-        {/* <Link to="/User">Register</Link>  |{" "}
-        <Link to="/Services">Services</Link>  |{" "}
-        <Link to="/Home">Home</Link>  |{" "}
-        <Link to="/Login">Login</Link>|{" "} */}
-        {/* <Link to="/Regestor">Regoster</Link>|{" "} */}
-        {/* <Link to="/AddFood">AddFood</Link>|{" "}
-        <Link to="/AddClothes">Addclothes</Link>|{" "}
-        <Link to="/AddDevice">AddDevice</Link>|{" "} */}
+
       </nav>
       <Outlet/>
       <div className="AppImg">
-      <Link to="/Addclothes"><img src="http://www.lahaonline.com/media/images/articles//ekhterak/2014_1513235969.jpg"/></Link>
-
-      <Link to="/AddFood"><img src="https://www.sayidaty.net/sites/default/files/styles/600x380/public/30/10/2015/1446225292_1.png?itok=dOBp5DS-"/></Link>
-    
+      
       </div>
     </div>
   );
