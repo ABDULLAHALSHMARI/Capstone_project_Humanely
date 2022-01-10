@@ -8,16 +8,16 @@ import Food from "./combonents/Food";
 
 export default function App() {
 
-  let [authenticate, setAuthenticate] = useState(false);
+//   let [authenticate, setAuthenticate] = useState(false);
 
- let usery= sessionStorage.setItem("enter", handleLogin);
+//  let usery= sessionStorage.setItem("enter", {handleLogin});
   
-  function handleLogin() {
-    setAuthenticate(true);
-  }
-  if (!authenticate) {
-    return <div class="login"><Login handleLogin={handleLogin} /> </div>;
-  }
+//   function handleLogin() {
+//     setAuthenticate(true);
+//   }
+//   if (!authenticate) {
+//     return <div class="login"><Login handleLogin={handleLogin} /> </div>;
+//   }
 
 //   function (event){
 //     setAuthenticate(true)
@@ -29,7 +29,7 @@ export default function App() {
 // }
 
   return (
-    <div style={{backgroundimage:"kabsa.jpg"}}>
+    <div style={{backgroundimage:""}}>
       {/* <h1 style={{ backgroundColor: ""
       }}>humanly</h1> */}
       <nav>
@@ -43,6 +43,7 @@ export default function App() {
 
     <Link to="/Home">Home</Link>  
     <Link to="/Login">Login</Link>
+    <button onClick={()=>{localStorage.setItem("logined","no")}}>Logout</button>
     <hr/>
     <br/>
     
