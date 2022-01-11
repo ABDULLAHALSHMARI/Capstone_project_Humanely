@@ -32,6 +32,7 @@ export default function App() {
     <div style={{backgroundimage:""}}>
       {/* <h1 style={{ backgroundColor: ""
       }}>humanly</h1> */}
+      
       <nav>
         <div class="header">
   <a href="<home/>" class="logo">Humanly</a>
@@ -50,13 +51,14 @@ export default function App() {
 
    
   </div>
-  
 </div>
 
       </nav>
       <Outlet/>
-      <div className="AppImg">
+      <div className="body">
       
+    {/* <img src="https://www.alwatan.com.sa/uploads/imported_images/31/16/73/dbsa.jpg"/>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWuVn7LD2lno7ABfLINRoNWQU7v5zBRIIh0A&usqp=CAU"/> */}
       </div>
     </div>
   );

@@ -48,6 +48,9 @@ body {
   background-color: #f1f1f1;
   padding: 20px 10px;
 }
+.totale{
+background-color: aquamarine;
+}
 
 /* .AppImg { */
   /* background-color: rgb(6, 187, 127);
@@ -124,3 +127,6 @@ background-repeat: no-repeat;height: 450px;background-size: 100% 100%;}
     float: none;
   }
 }
+
+
+
