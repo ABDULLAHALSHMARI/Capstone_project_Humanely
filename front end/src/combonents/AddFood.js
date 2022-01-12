@@ -38,30 +38,34 @@ export default function AddFood(){
 <form onSubmit={handleSubmit}>
   <input 
     type="text"
+    class="textbox"
     value={name}
     name="name"
     placeholder=" name"
     onChange={handlesetname}
   />
-  <br />
+  <br />  <br />
   <input
     type="text"
+    class="textbox"
     value={title}
     name="title"
     placeholder=" title"
     onChange={handlesettitle}
   />
-  <br />
+  <br />  <br />
   <input
     placeholder="img"
     type="text"
+    class="textbox"
     value={img}
     name="img"
     onChange={handlesetimg} 
-    />
+    />  <br />
     <br/>
     <input
     type="text"
+    class="textbox"
     value={expired}
     name="location"
     placeholder=" location"
