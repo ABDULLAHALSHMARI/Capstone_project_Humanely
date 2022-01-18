@@ -341,12 +341,16 @@ header ul li {
 .dropdown-content a:hover {
     color: black;
 }
-
+.logo{
+  background-color:white;
+  height: 20px;
+  width: 20px;
+}
 .title {
-    background: url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80') no-repeat;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqLlDZpTzTlMaAdosfbCONfC3T8jj8ieVX1w&usqp=CAU') no-repeat;
     background-position: top;
     background-size: cover;
-    height: 700px;
+    height: 550px;
     position: relative;
 }
 
@@ -464,7 +468,7 @@ header ul li {
 }
 
 .text {
-     background: url('https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80') no-repeat fixed;
+     background: url('https://palestinianrelief.org/wp-content/uploads/2020/09/2.jpg') no-repeat fixed;
     background-position: top;
     background-size: cover;
     height: 400px;
