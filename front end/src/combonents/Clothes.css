@@ -1,0 +1,14 @@
+.card {
+  
+    transition: 0.3s;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 100px;
+    padding: 100px;
+    background-color: beige;
+  }
+  
+  .container{
+    background-color: rgba(113, 224, 218, 0);
+  }

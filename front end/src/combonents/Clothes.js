@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-
+import './Clothes.css';
 
 export default class Clothes extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        clothes: []
+        clothes: [],
+        enter: localStorage.getItem("logined")
     };
   }
   
@@ -28,25 +29,49 @@ export default class Clothes extends Component {
   }
         
   render() {
+    if (localStorage.getItem("logined") == "yes") {
     return (
       <div>
         <h1> List  Of   Clothes : </h1>
         <Link to="/AddClothes"><button>Add Clothes</button></Link>
           <hr />
+          <div className="card">
           {this.state.clothes.map((item => (
                <div key={item.id}>
-                  <img height="110 px" width="110 px" src={item.img} />
+                  <img height="150px" width="150 px" src={item.img} />
                   <h2>{item.name}</h2>
                   <p>{item.title}</p>
                   <p>{item.size}</p>
-                  <button onClick={(e) => this.deleteContact(item.id, e)}>Get It</button>
+                  <button onClick={() => this.deleteContact(item.id)}>Get It</button>{" | "}
                   
                   <hr />
               </div>
            ))) 
-          }
+          }</div>
      </div>
-    );
+    );}else{
+      return (
+        <div >
+          <h1> List  Of   Clothes : </h1>
+          <Link to="/AddClothes"><button>Add Clothes</button></Link>
+            <hr />
+            
+            {this.state.clothes.map((item => (
+                 <div key={item.id}>
+                    <img height="150px" width="150 px" src={item.img} />
+                    <h2>{item.name}</h2>
+                    <p>{item.title}</p>
+                    <p>{item.size}</p>
+                    <Link to="/Login"><button>Get It</button></Link>
+                    
+                    
+                    <hr />
+                </div>
+             ))) 
+            }
+            
+       </div>
+      );}
   }
 }
 
