@@ -343,8 +343,13 @@ header ul li {
 }
 .logo{
   background-color:white;
-  height: 20px;
-  width: 20px;
+  height: 100px;
+  width: 100px;
+  float:left;
+}
+.word{
+  color: #ddd;
+  text-align: center;
 }
 .title {
     background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqLlDZpTzTlMaAdosfbCONfC3T8jj8ieVX1w&usqp=CAU') no-repeat;

@@ -8,8 +8,6 @@ import Food from "./combonents/Food";
 
 export default function App() {
   let [logged, setLogged] = useState("");
-
- 
 if(localStorage.getItem("logined") == "yes"){
   return (
     <div style={{ backgroundimage: "" }}>
@@ -20,8 +18,8 @@ if(localStorage.getItem("logined") == "yes"){
           <h4>Hand in hand let's continue</h4>
         </div>
         <div>
-          <img  className="logo" src="https://files.slack.com/files-pri/T02FM3FE1DJ-F02UFTKG76F/logo.png"/>
-          <h2>Takatof Project</h2>
+          <img  className="logo" src="https://h.top4top.io/p_22103fri51.png"/>
+          <h2>Huminly Project</h2>
         </div>
         <div>
           <ul>
@@ -37,9 +35,10 @@ if(localStorage.getItem("logined") == "yes"){
               <li class="dropbtn"><Link to="/Home">Home</Link>  </li>
 
             </div>
+            
             <div class="dropdown">
 
-              <li class="dropbtn"><Link to="" onClick={() => { localStorage.setItem("logined", "no"); setLogged((logged = "no")) }}>Logout</Link>
+              <li class="dropbtn"><Link to="" onClick={() => { localStorage.setItem("logined", "no");window.open("/","_self") }}>Logout</Link>
               </li>
             </div>
 
@@ -62,7 +61,8 @@ if(localStorage.getItem("logined") == "yes"){
           <h4>Hand in hand let's continue</h4>
         </div>
         <div>
-          <h2>Takatof Project</h2>
+        <img  className="logo" src="https://h.top4top.io/p_22103fri51.png"/>
+          <h2>Huminly Project</h2>
         </div>
         <div>
           <ul>
@@ -87,6 +87,7 @@ if(localStorage.getItem("logined") == "yes"){
           </ul>
         </div>
       </header>
+      
       <Outlet />
     </div>
   );

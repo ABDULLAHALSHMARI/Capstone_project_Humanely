@@ -12,3 +12,7 @@
   .container{
     background-color: rgba(113, 224, 218, 0);
   }
+  .work-title{
+    text-align: center;
+    color: rgb(8, 8, 8);
+  }
